@@ -58,6 +58,11 @@
                     <div class="valor">
                         <span>R$ 15,90</span>
                     </div><!-- fim .valor -->
+                    <div class="selecter">
+                        <button class="minus">-</button>
+                        <input  readonly="" type="text" class="total" value="1">
+                        <button class="plus">+</button>
+                    </div>
                 </div><!-- fim .content -->
             </article><!-- fim article -->
             <article class="box-secao-produtos col-inline col-x3">
@@ -72,6 +77,11 @@
                     <div class="valor">
                         <span>R$ 25,90</span>
                     </div><!-- fim .valor -->
+                    <div class="selecter">
+                        <button class="minus">-</button>
+                        <input  readonly="" type="text" class="total" value="1">
+                        <button class="plus">+</button>
+                    </div>
                 </div><!-- fim .content -->
             </article><!-- fim article -->
             <article class="box-secao-produtos col-inline col-x3">
@@ -86,6 +96,11 @@
                     <div class="valor">
                         <span>R$ 35,90</span>
                     </div><!-- fim .valor -->
+                    <div class="selecter">
+                        <button class="minus">-</button>
+                        <input  readonly="" type="text" class="total" value="1">
+                        <button class="plus">+</button>
+                    </div>
                 </div><!-- fim .content -->
             </article><!-- fim article -->
             <article class="box-secao-produtos col-inline col-x3">
@@ -100,6 +115,11 @@
                     <div class="valor">
                         <span>R$ 45,90</span>
                     </div><!-- fim .valor -->
+                    <div class="selecter">
+                        <button class="minus">-</button>
+                        <input  readonly="" type="text" class="total" value="1">
+                        <button class="plus">+</button>
+                    </div>
                 </div><!-- fim .content -->
             </article><!-- fim article -->
             <article class="box-secao-produtos col-inline col-x3">
@@ -114,6 +134,11 @@
                     <div class="valor">
                         <span>R$ 55,90</span>
                     </div><!-- fim .valor -->
+                    <div class="selecter">
+                        <button class="minus">-</button>
+                        <input  readonly="" type="text" class="total" value="1">
+                        <button class="plus">+</button>
+                    </div>
                 </div><!-- fim .content -->
             </article><!-- fim article -->
             <article class="box-secao-produtos col-inline col-x3">
@@ -128,11 +153,56 @@
                     <div class="valor">
                         <span>R$ 65,90</span>
                     </div><!-- fim .valor -->
+                    <div class="selecter">
+                        <button class="minus">-</button>
+                        <input  readonly="" type="text" class="total" value="1">
+                        <button class="plus">+</button>
+                    </div>
                 </div><!-- fim .content -->
             </article><!-- fim article -->
         </div><!-- fim .engloba-secao-exames -->
     </div><!-- fim .wrap -->
 </section>
+<div class="result_pedido">
+
+    <h2 class="page_header">Seu pedido</h2>
+
+    <div class="table-responsive">
+        <div class="thead"></div>
+        <table>
+            <tbody><tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Preço Unit.</th>
+                    <th>Subtotal</th>
+                </tr>
+
+            </tbody><tbody id="invoice_products">
+                <tr>
+                    <td>Combo IV</td>
+                    <td>1</td>
+                    <td>R$&nbsp;45,90</td>
+                    <td>R$&nbsp;45,90</td>
+                </tr>
+                </tbody>
+            <tbody><tr>
+                <td colspan="4">
+                    <div class="total_label_container">
+                        <input type="text" id="cep" placeholder="Informe o seu CEP">
+                        <div class="total_label">
+                            <strong>Total: </strong> <span id="total_price">R$&nbsp;45,90</span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" id="region_label" style="display:none;">
+
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
+</div>
 <section id="footer" class="secao">
     <div class="wrap">
         <p>Copyright © 2021 - Trabalho de Sistemas da Informação - Todos os direitos reservados</p>
